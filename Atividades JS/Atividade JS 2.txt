@@ -1,0 +1,123 @@
+//Faça um programa para entrar com uma distância (Km), o tempo de viagem (Horas) e dizer se a velocidade
+//média foi superior ao limite (80 Km/h) ou não.
+
+var Vfinal;
+
+
+Vfinal = Number(window.prompt('Defina a distancia percorrida:')) / Number(window.prompt('Em quanto tempo percorreu? (tenha 1 como uma hora inteira)'));
+if (Vfinal =< 80) {
+  window.alert(['Você andou a ',Vfinal,'km/h. Você andou na velocidade permitida'].join(''));
+}
+if (Vfinal > 80) {
+  window.alert(['Você andou a ',Vfinal,'km/h. Você ultrapassou o limite de velocidade. O DETRAN te ama!'].join(''));
+}
+
+
+
+//Faça um programa para ler a temperatura de uma pessoa e exibir a mensagem "ESTÁ COM FEBRE" ou
+//"ESTÁ NORMAL". Considere o valor base como 36.5
+
+
+var Temperatura;
+
+
+Temperatura = Number(window.prompt('Quantos Cº a pessoa esta agora?'));
+if (Temperatura < 36.5) {
+  window.alert(String(Temperatura) + 'não é febril!');
+}
+if (Temperatura >= 36.5) {
+  window.alert(String(Temperatura) + ' é febril! Procure um médico!');
+}
+
+
+
+//Faça um programa para ler dois valores e imprimir “EM ORDEM” caso o primeiro seja menor que o
+//segundo e “FORA DE ORDEM” no caso contrário.
+
+var NumA, NumB;
+
+
+NumA = Number(window.prompt('Definir primeiro valor'));
+NumB = Number(window.prompt('Definir segundo valor'));
+if (NumA < NumB) {
+  window.alert(['Em ordem ',NumA,' ',NumB].join(''));
+}
+if (NumA > NumB) {
+  window.alert(['Fora de ordem ',NumB,' ',NumA].join(''));
+}
+
+
+//Faça um programa que leia três valores representando as notas de um aluno. Informe a situação do
+//aluno: Aprovado, Reprovado ou Prova Final. Considere:
+//APROVADO - nota maior ou igual a 6.
+//PROVA FINAL - nota entre 4 e 5.9
+//REPROVADO – nota menor que 4
+
+
+var Nota1, Nota2, Nota3, Media;
+
+
+Nota1 = Number(window.prompt('Nota 1'));
+Nota2 = Number(window.prompt('Nota 2'));
+Nota3 = Number(window.prompt('Nota 3'));
+Media = (Nota1 + Nota2 + Nota3 + 0) / 3;
+if (Media >= 6) {
+  window.alert(['Sua média é: ',Media,' Voce está APROVADO!'].join(''));
+}
+if (Media >= 4 && Media <= 5.9) {
+  window.alert(['Sua média é: ',Media,' Você está de PROVA FINAL'].join(''));
+} else if (Media <= 3.9) {
+  window.alert(['Sua média é: ',Media,' Você está REPROVADO!'].join(''));
+}
+
+
+
+
+
+//Escreva um programa que leia 3 números inteiros e mostre o maior deles.
+
+var NumA, NumB, NumC;
+
+
+NumA = Number(window.prompt('Defina o primeiro numero'));
+NumB = Number(window.prompt('Defina o segundo numero'));
+NumC = Number(window.prompt('Defina o terceiro numero'));
+if (NumA > (NumB && NumC)) {
+  window.alert(String(NumA) + '  É o maior numero');
+} else if (NumB > (NumA && NumC)) {
+  window.alert(String(NumB) + '  É o maior numero');
+} else {
+  if (NumC > (NumA && NumB)) {
+    window.alert(String(NumC) + '  É o maior numero');
+  }
+}
+
+
+
+//Uma empresa concederá um aumento de salário aos funcionários que possuirem mais de 4 anos de serviço,
+
+//mais de 3 dependentes e salário atual abaixo de R$500,00. Faça um programa que leia estes dados de um funcionário
+//e imprima uma mensagem dizendo se o funcionário tem direito ao aumento ou não. Caso ele tenha este direito, calcule o
+//novo salário com 40% de aumento. Mostre o salário antigo, o novo salário e a diferença.
+
+
+var AnoServ, Dependentes, SalarioAt, NovoSalario;
+
+
+AnoServ = Number(window.prompt('Quantos anos de empresa você tem?'));
+if (AnoServ >= 4) {
+  Dependentes = Number(window.prompt('Quantos  dependentes você possui?'));
+  if (Dependentes >= 3) {
+    SalarioAt = Number(window.prompt('Qual é o seu salário hoje?'));
+    if (SalarioAt >= 500) {
+      NovoSalario = 40 * (SalarioAt / 100);
+      window.alert(['Seu novo salário é:  ',SalarioAt + NovoSalario,'.  Uma diferença de: ',NovoSalario,'  reais'].join(''));
+    } else {
+      window.alert('Você não cumpre o requisito salarial.');
+    }
+  } else {
+    window.alert('Precisa possuir no mínimo 3 dependentes.');
+  }
+} else {
+  window.alert('Você não possui anos de casa suficiente.');
+}

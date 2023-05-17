@@ -1,0 +1,82 @@
+//Faça um algoritmo para ler um valor correspondente a um lado de um quadrado e mostrar a ÁREA.//
+
+
+var Side, Area;
+
+
+Side = Number(window.prompt('Defina o lado do quadrado:'));
+Area = Side * 4;
+Area += '  é a área do quadrado';
+window.alert(Area);
+
+
+
+//Construa um programa que receba uma temperatura em graus Fahrenheit, e que calcule e apresente a temperatura em graus Celsius. Considere que C° = 5 x (F°-32)/9
+
+
+var TempF, Celsius;
+
+
+TempF = Number(window.prompt('Um numero em Fº:'));
+Celsius = 5 * ((TempF - 32) / 9);
+window.alert('Em Celsius é:  ' + String(Celsius))
+
+
+
+
+
+//Construa um programa o qual leia a altura de uma pessoa e calcule seu índice 
+//IMC, cuja fórmula é: IMC =peso/altura²
+
+
+var peso, altura, IMC;
+
+
+peso = Number(window.prompt('Defina o peso em KG (exemplo 90.00)'));
+altura = Number(window.prompt('Defina sua altura em M (exemplo 1.80)'));
+window.alert('Seu IMC é:  ' + String(IMC == peso / (altura * altura)));
+
+
+// Faça um algoritmo para ler um valor em polegadas e escrever o 
+//equivalente em centímetros. (1 polegada = 2.54 centímetros)
+
+
+var peso, altura, IMC;
+
+
+peso = Number(window.prompt('Defina o peso em KG (exemplo 90.00)'));
+altura = Number(window.prompt('Defina sua altura em M (exemplo 1.80)'));
+window.alert('Seu IMC é:  ' + String(IMC == peso / (altura * altura)));
+
+
+
+// Faça um algoritmo para ler base e altura de um triângulo e informar 
+//a área.
+
+
+
+var peso, altura, IMC;
+
+
+peso = Number(window.prompt('Defina o peso em KG (exemplo 90.00)'));
+altura = Number(window.prompt('Defina sua altura em M (exemplo 1.80)'));
+window.alert('Seu IMC é:  ' + String(IMC == peso / (altura * altura)));
+
+
+
+
+//Escreva um algoritmo para ler a idade de uma pessoa e exibir 
+//quantos dias de vida ela possui. Considere sempre anos "cheios" e 
+//que um ano possui 365 dias.
+
+
+
+var peso, altura, IMC;
+
+
+peso = Number(window.prompt('Defina o peso em KG (exemplo 90.00)'));
+altura = Number(window.prompt('Defina sua altura em M (exemplo 1.80)'));
+window.alert('Seu IMC é:  ' + String(IMC == peso / (altura * altura)));
+
+
+

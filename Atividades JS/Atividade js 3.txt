@@ -1,0 +1,113 @@
+//Construa um programa que apresente na tela os 10 primeiros números naturais, em
+//ordem.
+
+let i = 0;
+while(i <= 10){
+    console.log( i );
+    i++;
+}  
+
+
+
+//Construa um programa que leia as notas de um aluno em cada questão, de uma prova de
+//10 questões.
+//Se for digitada a nota zero, o sistema deverá parar imediatamente, informando a mensagem
+//"Não aprovado".
+
+
+let questao = 1;
+let nota = 0;
+
+while (questao <= 10) {  
+  nota = prompt("Digite a nota da questão " + questao + ":");  
+  
+  if (nota == 0) {
+    alert("Não aprovado");
+    break;
+  } 
+  else{
+    questao++
+  }
+}
+
+
+//Construa um programa que leia um valor do usuário e apresente
+//em seguida a soma de todos os números inteiros de 1 até o valor informado.
+//Ex. Para o valor 10, a soma deve ser 55: 1+2+3+4+5+6+7+8+9+10 = 55
+
+let valor = Number(prompt("Digite um valor:"));
+let soma = 0;
+
+for (let= i=1; i<= valor; i++) {
+  soma +=i;
+}
+
+alert("A soma dos numeros de 1 até " + valor + " é " + soma + ".")
+
+
+
+
+
+//Construa um programa que apresente a tabuada de determinado valor informado.
+//Ex. para valor = 6, a saída deverá ser:
+//6 x 1 = 6
+//6 x 2 = 12
+//6 x 3 = 18
+//6 x 4 = 24
+//6 x 5 = 30
+//6 x 6 = 36
+//6 x 7 = 42
+//6 x 8 = 48
+//6 x 9 = 54
+
+
+let multiplicador = Number(prompt("Digite o multiplicadcor:"));
+
+for (let sequencia = 1; sequencia <= 10; sequencia++){
+  let resultado = multiplicador * sequencia;
+  console.log(multiplicador + " X "+ sequencia + " = " + resultado);
+}
+
+
+
+
+//Constra um programa que leia valores digitados pelo usuário e
+//informe se o valor é par ou é impar. O programa deverá continuar solicitando valores
+//ao usuário até que este digite o valor "0", que irá encerrar o programa.
+
+
+let valor =1;
+while( valor != 0){
+  valor=Number(prompt("Digite um valor para saber se é PAR ou IMPAR. 0 encerrará o programa."))
+if (valor %2==0){ console.log(valor + " é par ")} 
+else { console.log(valor+ " é impar ")}
+
+
+//Construa um programa que solicite valores do usuário e conte quantos valores pares
+//foram informados. O programa deverá encerrar ao ser digitado o valor "0". Ao encerrar,
+//o programa deverá exibir quantos valores pares foram digitados.
+
+
+
+let contador = 0;
+let valor = prompt("Digite um valor (digite 0 para encerrar)");
+while (valor != 0) {
+  if (valor % 2 == 0) {
+    contador++; 
+    }
+  valor = prompt("Digite um valor (digite 0 para encerrar)");
+}
+console.log('Foram informados ' + contador + " valores pares");
+
+
+//Escreva um programa para apresentar na tela os 7 primeiros números múltiplos de 7.
+//Sugestão: Utilize a operação "resto", que captura o resto da divisão inteira.
+
+
+for (let i = 1; i <= 7; i++) {
+  let multiplo = 7 * i;
+  console.log(multiplo);
+}
+
+
+
