@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+}
+
+.calculadora{
+background-color:white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 15px;
+border-radius: 15px;
+}
+
+.button{
+    background-color:gray;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+#resultado{
+width: 205px;
+height: 30px;
+background-color: white;
+margin: 5px;
+font-size: 25px;
+padding: 5px;
+color: black;
+text-align: right;
+}
+
+.button:hover{
+    background-color: whitesmoke;
+    color:black
+}
